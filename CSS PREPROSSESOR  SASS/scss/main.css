@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  height: 100vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f7c4c4), to(#eee));
+  background: linear-gradient(#f7c4c4, #eee);
+}
+
+header h1 {
+  color: red;
+  font-size: 5rem;
+}
+
+header h1:hover {
+  color: blue;
+  -webkit-filter: drop-shadow(-3px -3px 2px rgba(255, 255, 255, 0.3)) drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.294)) drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(-3px -3px 2px rgba(255, 255, 255, 0.3)) drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.294)) drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.2));
+}
+
+header p {
+  letter-spacing: 0.1rem;
+  text-transform: captalise;
+  color: black;
+  font-size: 3rem;
+}
+
+header p:hover {
+  -webkit-filter: drop-shadow(-3px -3px 2px rgba(255, 255, 255, 0.3)) drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2)) drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(-3px -3px 2px rgba(255, 255, 255, 0.3)) drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2)) drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.2));
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,114 @@
+// HERE I WILL EXAMINE 6 PROPERTIES ONE BY ONE SO BE TUNED WITH ME
+
+// 1. SASS OPERATORS
+// 2. SASS VARIABLE
+// 3. SASS NESTED TAGS
+// 4. SASS MIXIN
+// 5. SASS MIXIN PARAMETERS
+// 6. SASS PARTALS
+
+
+
+@import "var";               //6. SASS PARTALS
+@import "mixins";
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html{
+    font-size: 62.5%;
+}
+
+
+
+header{
+    @include flexprops;
+    @include commonprops(0.2rem,uppercase);
+    height: 50vh + 50vh ;                                    // 1. SASS OPERATORS
+    width: 100%;
+    background: linear-gradient(rgb(247, 196, 196),$bg-color);      // 2. SASS VARIABLE is used here
+
+
+h1{
+    color: red;
+    font-size: 5rem;
+
+    &:hover{
+        color: blue;
+        filter: drop-shadow(-3px -3px 2px rgba(255, 255, 255, 0.3)) 
+                drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.294))
+                drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
+    }
+}
+
+
+p{
+    @include commonprops(0.1rem,captalise);
+    color: black;
+    font-size: 3rem;
+
+ 
+    &:hover{
+        filter: drop-shadow(-3px -3px 2px rgba(255,255,255,0.3)) 
+                drop-shadow(5px 5px 5px rgba(0,0,0,0.2))
+                drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
+    }
+}
+
+
+
+
+
+}                                                           //  3. SASS NESTED TAGS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// $bg-color:#eee;                                           //2. SASS VARIABLE
+
+
+// @mixin  flexprops {                                         //4. SASS MIXIN
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+// }
+
+// @mixin commonprops($val1,$val2) {                         //5. SASS MIXIN PARAMETERS
+//     letter-spacing: $val1;
+//     text-transform: $val2;
+// }  
+
+

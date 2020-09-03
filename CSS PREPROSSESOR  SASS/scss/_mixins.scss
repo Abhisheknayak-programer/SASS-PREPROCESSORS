@@ -1,0 +1,16 @@
+
+
+@mixin  flexprops {                                         //4. SASS MIXIN
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin commonprops($val1,$val2) {                         //5. SASS MIXIN PARAMETERS
+    letter-spacing: $val1;
+    text-transform: $val2;
+}  
+
+
+
